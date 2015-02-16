@@ -14,8 +14,11 @@ public class TextLoop implements Runnable{
 			System.out.println("Loop: " + name + ", iteration: " + i+".");
 		}
 	}
+	//pass 1 or 0 to argument when run the programm
+	public static void main(String args[] ){
 	
-	public static void main(String args[]){
+		
+		
 		if (args.length < 1 || (!args[0].equals("0") && !args[0].equals("1"))){
 			System.out.println("USAGE: java TextLoop <mode>");
 			System.out.println("    mode 0: without threads");
